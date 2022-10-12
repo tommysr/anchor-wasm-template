@@ -1,0 +1,30 @@
+{
+  "name": "wasm-template",
+  "version": "1.0.0",
+  "description": "A template for wasm with Typescript and Rust",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "cd program && wasm-pack build --target nodejs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matzayonc/wasm-template.git"
+  },
+  "keywords": [
+    "wasm",
+    "rust",
+    "typescript",
+    "template"
+  ],
+  "author": "matzayonc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matzayonc/wasm-template/issues"
+  },
+  "homepage": "https://github.com/matzayonc/wasm-template#readme",
+  "dependencies": {
+    "sdk": "./program/pkg"
+  }
+}
