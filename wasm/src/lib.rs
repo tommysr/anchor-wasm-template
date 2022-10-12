@@ -1,4 +1,5 @@
 use wasm_bindgen::prelude::*;
+use lib::print;
 
 #[wasm_bindgen]
 extern "C" {
@@ -8,5 +9,5 @@ extern "C" {
 
 #[wasm_bindgen]
 pub fn greet(name: &str) {
-    log(&format!("Hello, {}!", name));
+    log(&format!("Hello, {} and {}!", print().as_str(), name));
 }
